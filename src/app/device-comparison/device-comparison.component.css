@@ -1,0 +1,36 @@
+.font-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 18;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+.m-y-10 {
+  margin-top: 10;
+  margin-bottom: 10;
+}
+
+.p-10 {
+  padding: 10;
+}
+
+.border-width-1 {
+  border-width: 1;
+}
+
+.border-color-gray-300 {
+  border-color: #d1d5db;
+}
+
+.m-t-5 {
+  margin-top: 5;
+}

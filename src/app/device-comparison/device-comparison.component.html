@@ -1,0 +1,16 @@
+<ActionBar title="智能家居设备对比"></ActionBar>
+
+<ScrollView>
+  <StackLayout>
+    <GridLayout *ngFor="let device of devices" rows="auto, auto" columns="*, *, *" class="m-y-10">
+      <Label [text]="device.name" row="0" col="0" colSpan="3" class="text-center font-bold text-lg"></Label>
+      
+      <StackLayout *ngFor="let brand of brands; let i = index" row="1" [col]="i" class="p-10 border-width-1 border-color-gray-300">
+        <Label [text]="brand" class="font-bold"></Label>
+        <Label [text]="device.brands[brand].price" class="text-green-600"></Label>
+        <Label text="特点：" class="font-bold m-t-5"></Label>
+        <Label *ngFor="let feature of device.brands[brand].features" [text]="'• ' + feature" textWrap="true"></Label>
+      </StackLayout>
+    </GridLayout>
+  </StackLayout>
+</ScrollView>
